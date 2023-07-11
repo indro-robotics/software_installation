@@ -118,3 +118,7 @@ sudo systemctl start systemd-networkd
 sudo systemctl enable systemd-networkd
 sudo systemctl restart systemd-networkd
 
+#creating docker directory
+cd ~
+mkdir docker
+
