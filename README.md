@@ -3,7 +3,7 @@ Repository for installation of Indro's Software stack.
 
 This has been tested with Jetson NX and Jetpack SDK 35.3
 
-#Usage
+# Usage
 
 Run following command from within the repository:
 ```
