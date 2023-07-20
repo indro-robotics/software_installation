@@ -122,3 +122,5 @@ sudo systemctl restart systemd-networkd
 cd ~
 mkdir docker
 
+#installing speedtest
+sudo apt-get install speedtest-cli
