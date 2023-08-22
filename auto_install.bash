@@ -127,3 +127,6 @@ mkdir docker
 
 #installing speedtest
 sudo apt-get install speedtest-cli
+
+#installing tree
+sudo apt install tree -y
