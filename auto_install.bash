@@ -130,3 +130,8 @@ sudo apt-get install speedtest-cli
 
 #installing tree
 sudo apt install tree -y
+
+#installing ttyd
+echo "this might fail, if it does please use ctrl + c and rerun 'sudo snap install ttyd --classic'"
+sleep 5
+sudo snap install ttyd --classic
