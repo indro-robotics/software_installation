@@ -136,6 +136,11 @@ echo "this might fail, if it does please use ctrl + c and rerun 'sudo snap insta
 sleep 5
 sudo snap install ttyd --classic
 
+#installing vnstat
+echo "installing vnstat, a network utility"
+sleep 5 
+sudo apt install vnstat -y
+
 echo "............................................................................"
 echo "This computer will reboot in 10 seconds if it doesn't make sure to reboot ..."
 echo "............................................................................"
