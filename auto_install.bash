@@ -30,7 +30,7 @@ sudo apt update -y
 sudo apt upgrade -y  
 sudo apt install ros-foxy-desktop python3-argcomplete -y
 sudo apt install ros-dev-tools -y
-sudo apt install ros-foxy-rmw-cyclonedds-cpp
+sudo apt install ros-foxy-rmw-cyclonedds-cpp -y
 
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
@@ -51,13 +51,13 @@ sudo apt install terminator -y
 # Nvidia-Jetpack tools Installation
 echo "Starting jepack installation..."
 sleep 5
-sudo apt-get install nvidia-jetpack
+sudo apt-get install nvidia-jetpack -y
 
 # Docker installation
 echo "Starting docker installation:..."
 sleep 5
 sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg
+sudo apt-get install ca-certificates curl gnupg -y
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
@@ -69,7 +69,7 @@ echo \
 
 
 
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo usermod -aG docker $USER
 
@@ -87,7 +87,7 @@ curl -s https://install.zerotier.com | sudo bash
 
 
 
-echo "make sure to reboot the computer once this script has run succesfully"
+
 #can-bus rules 
 
 echo "Attempting to enable the Can0 port. Ensure it's connected to the Jetson"
@@ -135,3 +135,13 @@ sudo apt install tree -y
 echo "this might fail, if it does please use ctrl + c and rerun 'sudo snap install ttyd --classic'"
 sleep 5
 sudo snap install ttyd --classic
+
+echo "............................................................................"
+echo "This computer will reboot in 10 seconds if it doesn't make sure to reboot ..."
+echo "............................................................................"
+
+sleep 10
+sudo reboot
+
+
+
