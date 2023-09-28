@@ -56,7 +56,7 @@ sudo apt-get install nvidia-jetpack -y
 # Docker installation
 echo "Starting docker installation:..."
 sleep 5
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install ca-certificates curl gnupg -y
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
