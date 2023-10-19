@@ -23,11 +23,6 @@ sudo touch /etc/sysctl.d/10-cyclone-max.conf && {
 sleep 5
 sudo apt install terminator -y
 
-# Nvidia-Jetpack tools Installation
-echo "Starting jepack installation..."
-sleep 5
-sudo apt-get install nvidia-jetpack -y
-
 # Docker installation
 echo "Starting docker installation:..."
 sleep 5
