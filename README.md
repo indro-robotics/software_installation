@@ -8,5 +8,5 @@ Make sure to clone the repository in the user's `home` (i.e. ~) directory
 
 Run following command from within the repository:
 ```
-bash auto_install.bash
+bash auto_install.bash | tee install.log
 ```
