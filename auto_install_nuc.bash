@@ -95,11 +95,15 @@ sudo systemctl restart systemd-networkd
 cd ~
 mkdir docker
 
+### Installing network utilites
 #installing speedtest
-sudo apt-get install speedtest-cli
+sudo apt-get install speedtest-cli -y
 
 #installing tree
 sudo apt install tree -y
+
+#Installting iperf3
+sudo apt install iperf3 -y
 
 #installing ttyd
 echo "this might fail, if it does please use ctrl + c and rerun 'sudo snap install ttyd --classic'"
