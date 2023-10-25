@@ -105,6 +105,9 @@ sudo apt install tree -y
 #Installting iperf3
 sudo apt install iperf3 -y
 
+#installing tmux
+sudo apt install tmux -y
+
 #installing ttyd
 echo "this might fail, if it does please use ctrl + c and rerun 'sudo snap install ttyd --classic'"
 sleep 5
