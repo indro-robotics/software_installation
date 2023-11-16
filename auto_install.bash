@@ -132,9 +132,6 @@ sudo apt-get install speedtest-cli -y
 #installing tree
 sudo apt install tree -y
 
-#installing iperf3
-sudo apt install iperf3 -y
-
 #installing tmux
 sudo apt install tmux -y
 
