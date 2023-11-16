@@ -102,9 +102,6 @@ sudo apt-get install speedtest-cli -y
 #installing tree
 sudo apt install tree -y
 
-#Installting iperf3
-sudo apt install iperf3 -y
-
 #installing tmux
 sudo apt install tmux -y
 
@@ -113,10 +110,10 @@ echo "this might fail, if it does please use ctrl + c and rerun 'sudo snap insta
 sleep 5
 sudo snap install ttyd --classic
 
-#installing vnstat
-echo "installing vnstat, a network utility"
+#installing network utilities
+echo "installing vnstat, iftop , iperf3, nload which are network utilities"
 sleep 5 
-sudo apt install vnstat -y
+sudo apt install vnstat iftop nload iperf3 -y
 
 echo "............................................................................"
 echo "This computer will reboot in 10 seconds if it doesn't make sure to reboot ..."
